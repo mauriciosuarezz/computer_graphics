@@ -1,0 +1,28 @@
+============================================================
+GUIA DE INSTALACION Y COMPILACION - GRAFICACION C++
+============================================================
+
+1. ABRIR TERMINAL: 
+   Busca en el menú de inicio: "MSYS2 UCRT64".
+
+2. INSTALAR HERRAMIENTAS (Copiar y pegar):
+   pacman -S --noconfirm mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-make git
+
+3. CLONAR PROYECTO:
+   git clone https://github.com/tu_usuario/tu_repositorio.git
+   cd tu_repositorio
+
+4. CONFIGURAR Y COMPILAR (La forma correcta):
+   mkdir build
+   
+   # Generar los archivos de configuración
+   cmake -S . -B build -G "MinGW Makefiles"
+   
+   # Compilar usando la abstracción de CMake (Universal)
+   cmake --build build
+
+5. EJECUTAR:
+   ./build/bresenham_master.exe
+   ./build/dda_master.exe
+
+============================================================
