@@ -1,0 +1,11 @@
+# Binarios y objetos
+build/
+bin/
+*.o
+*.out
+*.exe
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
